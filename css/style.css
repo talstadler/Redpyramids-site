@@ -1,0 +1,116 @@
+/*   
+Theme Name: A Thematic Child Theme
+Theme URI: 
+Description: Use this theme to start your Thematic Child Theme development.
+Author: Ian Stewart
+Author URI: http://themeshaper.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is � Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
+p, h1, h2, h3, a{font-family:"Georgia", Times, serif;}
+
+/*main area wrapper*/
+#content{
+    float:left;
+    margin-left:200px;
+    width:600px;
+    position:relative;
+    top:40px;
+}
+
+
+/*the as we speak status*/
+.aswespeak h2{
+    color: #8d8d8d;
+    font-style:italic;
+    font-size:23px;
+    line-height:30px;
+}
+
+/*the left menu*/
+.welcome-blurb{
+    position:fixed;
+    top:190px;
+    left:50px;
+    font-size:12px;
+    line-height:17px;
+    font-style:italic;
+}
+.welcome-blurb a, .welcome-brub a:visited{
+    text-decoration: none;
+    color:black;
+}
+.welcome-blurb a:hover{
+    text-decoration: underline;
+    color:black;
+}
+#myname{
+    color: #FF0000;
+}
+
+
+/*wrapper to the first post*/
+div .single-top{
+    width:500px;
+}
+
+/*the new tumbnail design*/
+div .first-post{
+  width:500px;
+  float:left;
+  text-align:left;
+  margin-bottom:40px;
+  vertical-align:bottom;
+  }
+img .first-post{
+    margin-right:100px;
+}
+div .older-post{
+  margin-bottom:20px;
+  margin-right:50px;
+  width:150px;
+  height:220px;
+  float:left;
+  text-align:left;
+  vertical-align:bottom;
+  }
+  
+/*the writing under ech tumbnail pic*/
+.post-title a, .post-title a:visited {
+    font-size: 12px;
+    color: #8d8d8d;
+    line-height:20px;
+    text-decoration: none;
+}
+.post-title a:hover{
+    text-decoration: underline;
+}
+.post-date {
+    font-style:italic;
+    font-size:12px;
+}
